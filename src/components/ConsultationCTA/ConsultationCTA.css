@@ -1,0 +1,290 @@
+/* =========================================================
+  Sapex — CONSULTATION CTA
+   ========================================================= */
+
+.consultation-cta {
+  position: relative;
+  min-height: 650px;
+  padding: 120px 0 35px;
+  overflow: hidden;
+  background: #111111;
+  color: #ffffff;
+}
+
+.consultation-cta__background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* =========================================================
+   TECHNICAL BACKGROUND
+   ========================================================= */
+
+.consultation-cta__grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.12) 1px,
+      transparent 1px
+    );
+  background-size: 70px 70px;
+}
+
+.consultation-cta__circle {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.consultation-cta__circle--one {
+  width: 650px;
+  height: 650px;
+  right: -250px;
+  top: -190px;
+}
+
+.consultation-cta__circle--two {
+  width: 430px;
+  height: 430px;
+  right: -140px;
+  top: -80px;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.consultation-cta .container {
+  position: relative;
+  z-index: 1;
+  min-height: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.consultation-cta__content {
+  max-width: 900px;
+}
+
+.consultation-cta__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.consultation-cta__label-line {
+  width: 32px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.consultation-cta__title {
+  margin-top: 35px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(58px, 7vw, 100px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.consultation-cta__title span {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.consultation-cta__description {
+  max-width: 570px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.consultation-cta__actions {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 38px;
+}
+
+.consultation-cta__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  padding: 17px 22px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition:
+    background-color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.consultation-cta__button:hover {
+  background: #e8e8e8;
+  transform: translateY(-2px);
+}
+
+.consultation-cta__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.consultation-cta__phone span {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.consultation-cta__phone strong {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   BOTTOM
+   ========================================================= */
+
+.consultation-cta__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .consultation-cta {
+    min-height: 580px;
+    padding: 90px 0 30px;
+  }
+
+  .consultation-cta .container {
+    min-height: 520px;
+  }
+
+  .consultation-cta__title {
+    font-size: clamp(55px, 8vw, 80px);
+  }
+
+  .consultation-cta__circle--one {
+    width: 500px;
+    height: 500px;
+    right: -220px;
+  }
+
+  .consultation-cta__circle--two {
+    width: 340px;
+    height: 340px;
+    right: -120px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .consultation-cta {
+    min-height: 650px;
+    padding: 72px 0 25px;
+  }
+
+  .consultation-cta .container {
+    min-height: 600px;
+  }
+
+  .consultation-cta__title {
+    margin-top: 28px;
+    font-size: 52px;
+  }
+
+  .consultation-cta__description {
+    margin-top: 24px;
+    font-size: 15px;
+  }
+
+  .consultation-cta__actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .consultation-cta__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .consultation-cta__circle--one {
+    width: 380px;
+    height: 380px;
+    right: -230px;
+    top: -70px;
+  }
+
+  .consultation-cta__circle--two {
+    width: 260px;
+    height: 260px;
+    right: -170px;
+    top: -10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .consultation-cta {
+    min-height: 620px;
+  }
+
+  .consultation-cta .container {
+    min-height: 570px;
+  }
+
+  .consultation-cta__title {
+    font-size: 45px;
+  }
+
+  .consultation-cta__description {
+    font-size: 14px;
+  }
+
+  .consultation-cta__button {
+    padding: 16px 18px;
+  }
+}

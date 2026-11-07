@@ -1,0 +1,569 @@
+/* =========================================================
+  Sapex — ABOUT INTRO
+   ========================================================= */
+
+.about-intro {
+  position: relative;
+
+  padding: 120px 0;
+
+  background: #ffffff;
+
+  color: #111111;
+}
+
+/* ---------------------------------------------------------
+   TOP
+   --------------------------------------------------------- */
+
+.about-intro__top {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: end;
+
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid #dedede;
+}
+
+.about-intro__label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #666666;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.about-intro__label-number {
+  color: #111111;
+}
+
+.about-intro__label-line {
+  width: 32px;
+  height: 1px;
+
+  background: #111111;
+}
+
+.about-intro__top-description {
+  max-width: 470px;
+
+  justify-self: end;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   MAIN CONTENT
+   --------------------------------------------------------- */
+
+.about-intro__content {
+  display: grid;
+
+  grid-template-columns: minmax(300px, 0.85fr) minmax(400px, 1.15fr);
+
+  gap: 100px;
+
+  padding: 80px 0;
+}
+
+/* ---------------------------------------------------------
+   VISUAL
+   --------------------------------------------------------- */
+
+.about-intro__visual {
+  position: relative;
+
+  min-height: 470px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #171717 0%,
+      #272727 48%,
+      #111111 100%
+    );
+
+  color: #ffffff;
+}
+
+/*
+  Abstract engineering/grid treatment.
+  This avoids using another company's photograph.
+*/
+
+.about-intro__visual-grid {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.15;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+}
+
+/* Large diagonal engineering element */
+
+.about-intro__visual::before {
+  content: '';
+
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  top: 80px;
+  left: 50%;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.25);
+
+  transform:
+    translateX(-50%)
+    rotate(45deg);
+}
+
+.about-intro__visual::after {
+  content: '';
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  top: 165px;
+  left: 50%;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.28);
+
+  transform:
+    translateX(-50%)
+    rotate(45deg);
+}
+
+/* ---------------------------------------------------------
+   YEAR
+   --------------------------------------------------------- */
+
+.about-intro__visual-year {
+  position: absolute;
+
+  left: 36px;
+  bottom: 34px;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.about-intro__visual-year span {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+}
+
+.about-intro__visual-year strong {
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 42px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+}
+
+/* ---------------------------------------------------------
+   VISUAL CAPTION
+   --------------------------------------------------------- */
+
+.about-intro__visual-caption {
+  position: absolute;
+
+  right: 32px;
+  top: 32px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.about-intro__visual-dot {
+  width: 6px;
+  height: 6px;
+
+  margin-top: 4px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+/* ---------------------------------------------------------
+   TEXT
+   --------------------------------------------------------- */
+
+.about-intro__text {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.about-intro__title {
+  font-family: 'Manrope', sans-serif;
+
+  font-size: clamp(42px, 4.5vw, 68px);
+
+  font-weight: 700;
+
+  line-height: 1.03;
+
+  letter-spacing: -0.055em;
+}
+
+.about-intro__title span {
+  color: #8a8a8a;
+}
+
+.about-intro__description {
+  max-width: 650px;
+
+  margin-top: 28px;
+
+  color: #666666;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.about-intro__description + .about-intro__description {
+  margin-top: 16px;
+}
+
+/* ---------------------------------------------------------
+   LINK
+   --------------------------------------------------------- */
+
+.about-intro__link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  align-self: flex-start;
+
+  margin-top: 34px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid #111111;
+
+  color: #111111;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    gap var(--transition-normal),
+    opacity var(--transition-normal);
+}
+
+.about-intro__link:hover {
+  gap: 20px;
+
+  opacity: 0.65;
+}
+
+.about-intro__link-icon {
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+/* ---------------------------------------------------------
+   FACTS
+   --------------------------------------------------------- */
+
+.about-intro__facts {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  border-top: 1px solid #dedede;
+
+  border-bottom: 1px solid #dedede;
+}
+
+.about-intro__fact {
+  min-height: 130px;
+
+  padding: 26px 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border-right: 1px solid #dedede;
+}
+
+.about-intro__fact:last-child {
+  border-right: none;
+}
+
+.about-intro__fact-label {
+  color: #888888;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.about-intro__fact strong {
+  color: #111111;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .about-intro {
+    padding: 90px 0;
+  }
+
+  .about-intro__content {
+    grid-template-columns:
+      minmax(280px, 0.8fr)
+      minmax(350px, 1.2fr);
+
+    gap: 55px;
+  }
+
+  .about-intro__visual {
+    min-height: 420px;
+  }
+
+  .about-intro__facts {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .about-intro__fact:nth-child(2) {
+    border-right: none;
+  }
+
+  .about-intro__fact:nth-child(-n + 2) {
+    border-bottom: 1px solid #dedede;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .about-intro {
+    padding: 72px 0;
+  }
+
+  .about-intro__top {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding-bottom: 32px;
+  }
+
+  .about-intro__top-description {
+    justify-self: start;
+
+    max-width: 500px;
+  }
+
+  .about-intro__content {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding: 55px 0;
+  }
+
+  .about-intro__visual {
+    min-height: 360px;
+  }
+
+  .about-intro__visual::before {
+    width: 320px;
+    height: 320px;
+
+    top: 75px;
+  }
+
+  .about-intro__visual::after {
+    width: 200px;
+    height: 200px;
+
+    top: 135px;
+  }
+
+  .about-intro__title {
+    font-size: 44px;
+  }
+
+  .about-intro__description {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-intro__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro__fact {
+    min-height: 105px;
+
+    padding: 22px 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #dedede;
+  }
+
+  .about-intro__fact:last-child {
+    border-bottom: none;
+  }
+
+  .about-intro__fact:nth-child(-n + 2) {
+    border-bottom: 1px solid #dedede;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .about-intro__visual {
+    min-height: 320px;
+  }
+
+  .about-intro__title {
+    font-size: 38px;
+  }
+
+  .about-intro__visual-year {
+    left: 24px;
+    bottom: 24px;
+  }
+
+  .about-intro__visual-caption {
+    right: 22px;
+    top: 22px;
+  }
+}
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.about-intro__visual {
+  overflow: hidden;
+}
+
+.about-intro__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-intro__visual {
+    min-height: 420px;
+  }
+
+  .about-intro__image {
+    min-height: 420px;
+  }
+}
