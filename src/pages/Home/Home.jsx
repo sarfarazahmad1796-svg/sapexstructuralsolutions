@@ -6,6 +6,7 @@ import CapabilitiesSection from '../../components/CapabilitiesSection/Capabiliti
 import ProjectsSection from '../../components/ProjectsSection/ProjectsSection';
 import ApproachSection from '../../components/ApproachSection/ApproachSection';
 import ConsultationCTA from '../../components/ConsultationCTA/ConsultationCTA';
+import SEO from '../../components/SEO/SEO';
 
 
 import './Home.css';
@@ -13,6 +14,11 @@ import './Home.css';
 function Home() {
   return (
     <div className="home">
+      <SEO
+        title="Structural Engineering Company in Mohali | Sapex Structural Solutions"
+        description="Sapex Structural Solutions provides structural engineering, RCC and steel design, PEB detailing, and consultancy in Mohali, Punjab, and across India."
+        keywords="Sapex Structural Solutions, structural solutions, structural engineering, structural engineering company Mohali, structural design India, RCC design, steel structure design, PEB design, structural consultancy Punjab"
+      />
 
       <main>
         <Hero />

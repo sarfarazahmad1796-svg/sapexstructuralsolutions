@@ -1,13 +1,17 @@
-import { Link } from 'react-router';
-
 import projectsData from '../../data/projectsData';
 import ConsultationCTA from '../../components/ConsultationCTA/ConsultationCTA';
+import SEO from '../../components/SEO/SEO';
 
 import './Projects.css';
 
 function Projects() {
   return (
     <div className="projects-page">
+      <SEO
+        title="Structural Engineering Projects | Sapex Structural Solutions"
+        description="Explore the structural project categories supported by Sapex Structural Solutions across residential, commercial, industrial, and infrastructure work."
+        keywords="structural engineering projects India, building structural design projects, industrial structure projects, Sapex Structural Solutions"
+      />
       {/* Hero */}
       <section className="projects-page__hero">
         <div className="container">

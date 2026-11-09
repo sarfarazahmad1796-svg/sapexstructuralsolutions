@@ -1,11 +1,17 @@
 import ConsultationCTA from '../../components/ConsultationCTA/ConsultationCTA';
 import FounderSection from '../../components/FounderSection/FounderSection';
+import SEO from '../../components/SEO/SEO';
 
 import './About.css';
 
 function About() {
   return (
     <div className="about-page">
+      <SEO
+        title="About Sapex Structural Solutions | Mohali, Punjab"
+        description="Learn about Sapex Structural Solutions Pvt. Ltd., a Mohali-based structural engineering practice serving projects across Punjab, Chandigarh, Haryana, and India."
+        keywords="Sapex Structural Solutions, structural engineering company Mohali, structural consultants Punjab, structural engineering India"
+      />
       <main>
         <section className="about-page__hero">
           <div className="container">

@@ -71,7 +71,7 @@ function Footer() {
                 +91 91350 86995
               </a>
 
-              <a href="mailto:info@sapexstructuralsolutions.com">
+              <a href="mailto:info.sapexpvt@gmail.com">
                 info.sapexpvt@gmail.com
               </a>
             </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import companyData from '../../data/companyData';
+import SEO from '../../components/SEO/SEO';
 
 import './Contact.css';
 
@@ -87,6 +88,11 @@ const [submitStatus, setSubmitStatus] = useState(null);
 
   return (
     <div className="contact-page">
+      <SEO
+        title="Contact Sapex Structural Solutions | Mohali"
+        description="Contact Sapex Structural Solutions in Mohali, Punjab, for structural engineering, design, detailing, and consultancy enquiries across India."
+        keywords="contact structural engineer Mohali, structural engineering consultancy Punjab, Sapex Structural Solutions contact"
+      />
       {/* Hero */}
       <section className="contact-page__hero">
         <div className="container">

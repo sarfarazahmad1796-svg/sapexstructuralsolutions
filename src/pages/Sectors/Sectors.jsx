@@ -2,12 +2,18 @@ import { Link } from 'react-router';
 
 import sectorsData from '../../data/sectorsData';
 import ConsultationCTA from '../../components/ConsultationCTA/ConsultationCTA';
+import SEO from '../../components/SEO/SEO';
 
 import './Sectors.css';
 
 function Sectors() {
   return (
     <div className="sectors-page">
+      <SEO
+        title="Building & Infrastructure Sectors | Sapex Structural Solutions"
+        description="Sapex provides structural engineering for residential, commercial, industrial, healthcare, educational, warehousing, and infrastructure projects."
+        keywords="building structural engineering, industrial structural engineering, commercial building design, infrastructure engineering India, warehouse structural design, Sapex Structural Solutions"
+      />
       <section className="sectors-page__hero">
         <div className="container">
           <div className="sectors-page__hero-label">

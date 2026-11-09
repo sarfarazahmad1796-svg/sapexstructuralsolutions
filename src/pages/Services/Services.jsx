@@ -2,12 +2,18 @@ import { Link } from 'react-router';
 
 import servicesData from '../../data/servicesData';
 import ConsultationCTA from '../../components/ConsultationCTA/ConsultationCTA';
+import SEO from '../../components/SEO/SEO';
 
 import './Services.css';
 
 function Services() {
   return (
     <div className="services-page">
+      <SEO
+        title="Structural Engineering & Design Services | Sapex"
+        description="Explore structural analysis and design, RCC and steel design, PEB detailing, structural audits, retrofitting, and engineering consultancy by Sapex."
+        keywords="structural engineering services, structural design services India, RCC structural design, steel detailing, PEB design and detailing, structural audit, retrofitting consultancy, Sapex Structural Solutions"
+      />
       <section className="services-page__hero">
         <div className="container">
           <div className="services-page__hero-label">
